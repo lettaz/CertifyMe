@@ -1,0 +1,33 @@
+<div class="flex">
+    <!-- Sidebar -->
+    <div class="bg-gray-800 text-white w-64 min-h-screen p-5">
+      <div class="mb-10">
+        <img src="assets/logo.svg" class="h-12 mb-3" alt="Logo">
+      </div>
+      <ul class="space-y-2 flex-col h-full justify-between">
+        <li><button class="w-full text-left block py-2.5 px-4 rounded hover:bg-gray-700">Dashboard</button></li>
+        <li><button (click)="Settings()"  class="w-full text-left block py-2.5 px-4 rounded hover:bg-gray-700">Settings</button></li>
+        <li><button (click)="onLogout()" class="w-full text-left block py-2.5 px-4 rounded hover:bg-gray-700">Logout</button></li>
+      </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="flex-1 p-10">
+        <div *ngIf="hasCertificate; else noCertificate" class="bg-white p-6 rounded-lg shadow">
+          <img src="assets/certified.png" alt="Certificate Issued" class="mx-auto">
+          <p class="text-center mt-4">
+            Hurray!!!! <strong>{{ studentName }}</strong>, your certificate is ready! <span class="text-blue-500 hover:text-blue-700 cursor-pointer" (click)="copyLink()">Copy Verification Link</span> and show it off!
+          </p>
+        </div>
+        <ng-template #noCertificate>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <img src="assets/notissued.png" alt="Certificate Not Issued" class="mx-auto">
+            <p class="text-center mt-4">
+              Hi <strong>{{ studentName }}</strong>, it seems your certificate hasn't been issued yet or maybe you've been a bad person and they revoked it...haha got you...just joking. Well, contact your institution if you were expecting it and it's not here.
+            </p>
+          </div>
+        </ng-template>
+      </div>
+  </div>
+
+

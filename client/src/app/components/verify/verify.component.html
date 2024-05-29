@@ -1,0 +1,10 @@
+<div class="container mx-auto text-center p-10">
+    <!-- Tailwind CSS Spinner -->
+    <div *ngIf="isLoading" class="flex justify-center items-center">
+      <div class="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-blue-500"></div>
+    </div>
+    <!-- Verification Images -->
+    <img *ngIf="!isLoading && isValid" src="assets/valid.png" alt="Valid Certificate" class="mx-auto">
+    <img *ngIf="!isLoading && !isValid" src="assets/invalid.png" alt="Invalid Certificate" class="mx-auto">
+  </div>
+  

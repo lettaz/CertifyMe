@@ -1,0 +1,181 @@
+}
+    console.log("No logs found in the transaction receipt.");
+} else {
+    }
+        console.log("CertificateIssued event not found in the transaction receipt.");
+    } else {
+        console.log("Issuer:", issuer);
+        console.log("Student Name:", studentName);
+        console.log("Issued Certificate ID:", certificateID);
+        const issuer = decodedData[1];
+        const studentName = decodedData[0];
+        );
+            event.data
+            ["string", "string"],
+        const decodedData = ethers.utils.defaultAbiCoder.decode(
+        // Decode the data part (non-indexed parameters: studentName and issuer)
+        const certificateID = event.topics[1];
+        // The first topic is the event signature, and the second topic is the indexed parameter (certificateID)
+        console.log("Event found:", event);
+    if (event) {
+    const event = logs.find(log => log.topics[0] === eventSignature);
+    // Find the log corresponding to the event
+    const eventSignature = ethers.utils.id("CertificateIssued(uint256,string,string)");
+    // Event signature for CertificateIssued(uint256,string,string)
+    });
+        console.log("Log Data:", log.data);
+        console.log("Log Topics:", log.topics);
+        console.log("Log Address:", log.address);
+    logs.forEach(log => {
+    // Log all event topics and data for inspection
+if (logs.length > 0) {
+console.log("Transaction Logs:", logs);
+const logs = receipt.logs;
+console.log("Transaction Receipt:", receipt);
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
+}
+    console.log("No logs found in the transaction receipt.");
+} else {
+    }
+        console.log("CertificateIssued event not found in the transaction receipt.");
+    } else {
+        console.log("Issuer:", issuer);
+        console.log("Student Name:", studentName);
+        console.log("Issued Certificate ID:", certificateID);
+        const issuer = decodedData[1];
+        const studentName = decodedData[0];
+        );
+            event.data
+            ["string", "string"],
+        const decodedData = ethers.utils.defaultAbiCoder.decode(
+        // Decode the data part (non-indexed parameters: studentName and issuer)
+        const certificateID = event.topics[1];
+        // The first topic is the event signature, and the second topic is the indexed parameter (certificateID)
+    if (event) {
+    const event = logs.find(log => log.topics[0] === eventSignature);
+    // Correctly find the event
+    const eventSignature = ethers.utils.id("CertificateIssued(uint256,string,string)");
+if (logs.length > 0) {
+console.log("Transaction Logs:", logs);
+const logs = receipt.logs;
+console.log("Transaction Receipt:", receipt);
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
+}
+    console.log("No logs found in the transaction receipt.");
+} else {
+    }
+        console.log("CertificateIssued event not found in the transaction receipt.");
+    } else {
+        console.log("Issuer:", issuer);
+        console.log("Student Name:", studentName);
+        console.log("Issued Certificate ID:", certificateID);
+        const issuer = decodedData[1];
+        const studentName = decodedData[0];
+        );
+            event.data
+            ["string", "string"],
+        const decodedData = ethers.utils.defaultAbiCoder.decode(
+        // Decode the data part (non-indexed parameters: studentName and issuer)
+        const certificateID = event.topics[1];
+        // The first topic is the event signature, and the second topic is the indexed parameter (certificateID)
+    if (event) {
+    const event = logs.find(log => log.topics[0] === eventSignature);
+    // Find the log corresponding to the event
+    const eventSignature = ethers.utils.id("CertificateIssued(uint256,string,string)");
+    // Event signature for CertificateIssued(uint256,string,string)
+if (logs.length > 0) {
+console.log("Transaction Logs:", logs);
+const logs = receipt.logs;
+console.log("Transaction Receipt:", receipt);
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
+console.log("Transaction Logs:", receipt.logs);
+}
+    console.log("No logs found in the transaction receipt.");
+} else {
+    }
+        console.log("CertificateIssued event not found in the transaction receipt.");
+    } else {
+        console.log("Issued Certificate ID:", certificateID.toString());
+        const certificateID = decodedEvent[0];
+        );
+            event.data
+            ["uint256", "string", "string"],
+        const decodedEvent = ethers.utils.defaultAbiCoder.decode(
+    if (event) {
+    const event = receipt.logs.find(log => log.topics[0] === ethers.utils.id("CertificateIssued(uint256,string,string)"));
+if (receipt.logs.length > 0) {
+// Check if logs array is present and not empty
+console.log("Transaction Receipt:", receipt);
+// Inspect the receipt to see if it contains logs
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
+console.log("Transaction Receipt:", receipt);
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
+console.log("Transaction Receipt:", receipt);
+}
+    console.log("CertificateIssued event not found in the transaction receipt.");
+} else {
+    console.log("Issued Certificate ID:", certificateID.toString());
+    const certificateID = event.args.certificateID;
+if (event) {
+const event = receipt.events.find(event => event.event === 'CertificateIssued');
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
+console.log("Issued Certificate ID:", certificateID.toString());
+const certificateID = event.args.certificateID;
+const event = receipt.events.find(event => event.event === 'CertificateIssued');
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+console.log("Issued Certificate ID:", certificateID.toString());
+const certificateID = event.args.certificateID;
+const event = receipt.events.find(event => event.event === 'CertificateIssued');
+const receipt = await tx.wait();
+const tx = await certManagement.issueCertificate("John Doe", "Blockchain 101", "University");
+console.log("Is Authorized:", isAuthorized);
+const isAuthorized = await certManagement.authorizedIssuers(deployer.address);
+await certManagement.addIssuer(deployer.address);
+console.log("CertificateManagement deployed to:", await certManagement.getAddress());
+await certManagement.waitForDeployment();
+const certManagement = await CertificateManagement.deploy();
+const CertificateManagement = await ethers.getContractFactory("CertificateManagement");
+const [deployer] = await ethers.getSigners();
